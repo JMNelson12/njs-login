@@ -1,6 +1,15 @@
 const express = require('express');
-const app = express();
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
+const expressValidator = require('express-validator');
+const flash = require('connect-flash');
+const session = require('express-session');
+const passport = require('passport');
+const LocalStrategy = require('passport-local').Strategy;
+const mongo = require('mongodb');
+const mongoose = require('mongoose');
 
-app.listen('3000', () => {
-  console.log('listening on port 3000...');
-});
+mongoose.connect('mongodb://localhost/njslogin');
+var db = mongoose.connection();

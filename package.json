@@ -17,7 +17,19 @@
   },
   "homepage": "https://github.com/JMNelson12/njs-login#readme",
   "dependencies": {
-    "express": "^4.15.5",
-    "nodemon": "^1.12.1"
-  }
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*"
+}
 }
